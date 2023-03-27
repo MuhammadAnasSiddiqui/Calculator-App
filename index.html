@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+    <div class="calculator">
+        <input type="text" placeholder="0" id="btn">
+
+        <div>
+            <button class="opt" onclick="btn.value = ''">Ac</button>
+            <button class="opt" onclick="btn.value = btn.value.toString().slice(0,-1)">Del</button>
+            <button class="opt" onclick="cal('%')">%</button>
+            <button class="opt" onclick="cal('/')">/</button>
+        </div>
+        <div>
+            <button onclick="cal('7')">7</button>
+            <button onclick="cal('8')">8</button>
+            <button onclick="cal('9')">9</button>
+            <button class="opt" onclick="cal('*')">*</button>
+        </div>
+        <div>
+            <button onclick="cal('4')">4</button>
+            <button onclick="cal('5')">5</button>
+            <button onclick="cal('6')">6</button>
+            <button class="opt" onclick="cal('-')">-</button>
+        </div>
+        <div>
+            <button onclick="cal('1')">1</button>
+            <button onclick="cal('2')">2</button>
+            <button onclick="cal('3')">3</button>
+            <button class="opt" onclick="cal('+')">+</button>
+        </div>
+        <div>
+            <button onclick="cal('00')">00</button>
+            <button onclick="cal('0')">0</button>
+            <button onclick="cal('.')">.</button>
+            <button class="equalBtn" onclick="ans()">=</button>
+        </div>
+
+
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
